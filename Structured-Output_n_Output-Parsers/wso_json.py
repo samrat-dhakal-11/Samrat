@@ -1,6 +1,6 @@
-from langchain_groq import ChatGroq
+from langchain_groq import ChatGroq #type:ignore
 from pathlib import Path
-from dotenv import load_dotenv
+from dotenv import load_dotenv #type:ignore
 
 import os
 # Load environment variables from .env file

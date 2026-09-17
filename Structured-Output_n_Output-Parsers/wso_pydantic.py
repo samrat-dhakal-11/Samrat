@@ -1,7 +1,7 @@
-from langchain_groq import ChatGroq
+from langchain_groq import ChatGroq #type:ignore
 from pathlib import Path
-from dotenv import load_dotenv
-from pydantic import BaseModel, Field
+from dotenv import load_dotenv #type:ignore
+from pydantic import BaseModel, Field #type:ignore
 from typing import Optional,Literal
 import os
 # Load environment variables from .env file

@@ -31,30 +31,7 @@ print("-"*48)
 
 go_chat=True
 
-# def prompt_style():
-#   print("="*48)
-#   print()
-#   style_input=questionary.select(
-#         f"Select Your Output Style {user_name}😁",
-#         ["Beginner-Friendly", "Technical", "Code-Oriented", "Mathematical"] 
-#         ).ask()
-  
-#   print()
-#   length_input=questionary.select(
-#         f"Select Your Length Style {user_name}😙",
-#         ["Short (1-2 paragraphs)", "Medium (3-5 paragraphs)", "Long (detailed explanation)"]
-#         ).ask()
-  
-#   print("="*48)
-  
-#   print(f"\nYou Choose Output Style:{style_input} \t Length Style:{length_input}")
-#   return style_input,length_input
 
-# print(f"\nBefore heading Do choose Output Style and Length{user_name}😘")
-# style_input,length_input=prompt_style()
-
-# print(f"\nIf you Wanna End Chat Just Write 'End'🙏 and If Style Change Just Write 'Changestyle'😊")
-# print()
 
 print("-"*48)
 
@@ -74,12 +51,8 @@ def chat_section(go_chat):
     if(user_query.lower()=="end"):
       print("\nAs You Have written End Chat is Ended....🎇🎇🎆🎇🎆🎇🎆")
       go_chat=False
-      
-    # elif(user_query.lower()=="changestyle"):
-    #   style_input,length_input=prompt_style()
-      
+         
     else:
-    #   chain= template | modell
       assistant_res=modell.invoke(chat_histroy)
       
       assistant_response=assistant_res.content
