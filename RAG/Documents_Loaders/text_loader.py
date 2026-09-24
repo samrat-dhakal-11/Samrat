@@ -43,3 +43,6 @@ chain=prompt | model | parser
 result=chain.invoke({'poem':docs[0].page_content})
 print("\n\n\n\n")
 print(result)
+
+
+
